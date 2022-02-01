@@ -1,0 +1,173 @@
+/************** table of content **********
+
+- general  styles
+-body styles
+
+**********/
+
+/* font selection */
+
+
+
+@font-face {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        src: local('fonts/'), local('OpenSans-Light'), url("/fonts/Montserrat-Bold.ttf") format('woff');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: url("/fonts/Roboto-Regular.ttf") format('woff');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Open Sans Light'), local('OpenSans-Light'),url("/fonts/Roboto-Bold.ttf") format('woff');
+}
+
+/* general body styles */
+*{
+        margin: 0;
+        padding: 0;
+        font-family: 'Roboto';
+        font-weight: 300;
+}
+
+
+.title{
+        font-family: 'Montserrat';
+        font-weight: 700;
+}
+
+.orange{
+        color: #FFB626 ;
+}
+
+.work{
+        border: 1px solid orangered;
+}
+
+.ash{
+        color: #707070;
+}
+
+.flex-center{
+        display: flex;
+        justify-content: center;
+}
+
+body{
+        background-color: #F8F8F8;
+}
+
+label{
+        margin-bottom: 0 !important;
+        font-size: 0.9rem !important;
+        padding-left:5px !important ;
+}
+
+input{
+        height: 2.8rem !important;
+}
+
+/*********** navigation section  ***********/
+.navigation{
+        box-shadow: 0 0 5px 0 #00000060;
+        border-radius: 0 0 5px 5px ;
+}
+
+.navbar{
+        padding: 0.6rem 0 !important;
+}
+
+#desktopNav{
+        display: none;
+}
+
+.brand-name{
+        font-size:1.5rem ;
+        /* color: #707070; */
+}
+
+.navbar > .ash:hover{
+        color: #FFAA00 !important;
+        transition: 0.6s !important;
+}
+/*********** Registration section styles ***********/
+
+.reg-intro{
+        font-family:"Roboto";
+        font-weight: 700;
+        font-size: 1.2rem !important;
+}
+
+
+.my-option{
+        font-family: 'Roboto' !important;
+}
+.form-control{
+        border-radius: 10px !important;
+        border: none !important;
+        /* height: ; */
+        background-color: #65656530  !important;
+}
+.form-control:focus{
+        box-shadow: 0 0 0 0.19rem #ffb7269c !important;
+        border: none !important;
+}
+.form-control::placeholder{
+        font-size: 0.9rem !important;
+}
+
+.btn{
+        color: white !important;
+        height: 2.75rem !important;
+        width: 7.25rem !important;
+        border-radius: 10px !important;
+}
+
+.btn:focus{
+        border: none !important;
+}
+
+.footer-p{
+        color: #4d4d4dc2  !important;
+        font-size: 0.8rem !important;
+} 
+#book-link{
+        margin-left: 5px;
+        font-weight: 500;
+        color: #FFB626;
+}
+
+/*********** footer section styles ***********/
+
+.page-footer{
+        position: absolute;
+        background-color:rgb(14, 14, 14)  !important ;
+        bottom: 0;
+        height: 6rem;
+        width: 100%;
+}
+
+
+.connect-copy{
+        height:1rem !important;
+        width: 0.95rem !important;
+
+}
+
+.connect-mail{
+        height:0.6rem;
+        width: 1rem;
+}
+
+.footer-p{
+        color: #4d4d4dc2  !important;
+        font-size: 0.8rem !important;
+}
