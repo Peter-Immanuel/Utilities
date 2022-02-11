@@ -1,0 +1,18 @@
+
+
+algorithm
+- Iterate through the date column
+  and obtain the index of every space within the column
+  store that index in a list
+
+using the indexes:
+    split the dataframe-> this should give the dataset for each month 
+    e.g for the first month it would be start to index and the next 
+    month will be previous index to next index
+
+- compute the individual call dropped and find their value DCR 
+- compute the individual call successrate and find their value
+- compute the last required field and get its value 
+
+update this values to a dictionary with key as the month
+

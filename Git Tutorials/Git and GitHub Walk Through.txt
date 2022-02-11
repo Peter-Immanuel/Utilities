@@ -1,0 +1,71 @@
+# Pushing Code to GitHub using Git
+
+
+# Key definitions
+        - Remote
+        - Repository
+        - origin
+        - Branch
+        - Push
+
+This process involves 3 steps:
+
+- Create Repository (That is the link to a file on Github)
+- Synchronizing local Repository with Remote Repository
+- Pushing Code to Repository Head or Branch
+
+
+Step1: Creating Repository:
+        a) Create from GitHub Website
+
+
+Step 2: Synchronizing local with Remote Repo:
+        This can also be done in 2 ways:
+        a) initializing git locally and the push
+        b) cloning the remote repository locally
+
+
+#Explanations
+step 2a: In the folder you want to keep track of, type in these commands
+	- "git init"                                                                    # To initialize git
+        - "git branch -M <your branch name>"                     # Rename the branch you are pushing from, to main, so that it corresponds to the default branch on your GitHub account
+	- "git remote  add origin <repository name> "          # This command saves the link to your online repo in a variable named 'origin' which could be any name entirely
+        - "git add <filename> or ."     		                    # to either add a specific file "<filename>" or all the files in the folder
+        - "git commit -m"                                                       # Description of your commit"
+        - "git push  origin main"     			                      # Means push to Origin remote repo my branch main 
+
+step 2b: Copy the link of your remote repo and go to an empty folder:
+        - "git clone <repo link>" 	        #This make a copy of you remote repo on you PC and sets it up for you
+        - "git add <filename> or ."            # To either add all files in the folder of specific files
+        - "git commit -m"                          # Description of your commit. Your description should be enclosed in double quotation.
+        - "git push  origin main"     	         # Means push to Origin remote repo my branch main 
+
+
+
+
+Step 3: 
+        Cloning a branch from your repo:
+                from 2b replace i with:  "git clone  -b <repo link> <name of branch>"                  #eg. git clone -b <repo link> peter"
+
+        Pushing from a new branch to Remote Repo without new branch:
+                it could be done in a number of ways, but here are 2.
+                1. After cloning your remote repo to your local device:
+			
+			create a new branch:
+			- "git branch <branch name>" 			   # This creates a branch for you without moving into the branch
+                        - "git checkout -b <branch name>"  		# This creates a branch for you and sets HEAD to this branch's Commit. 
+        
+                        
+			Now make changes to the files then;  
+                        - "git add <filename> or ."     		            # To either add a specific file "<filename>" or all the files in the folder
+                        - "git commit -m"                   		                # Description of your commit. Your description should be enclosed in double quotation.
+                        - "git push origin <name of new branch> "       # Note Origin is the link for your remote repo
+
+                2. Without Cloning the repo locally:
+                        - "git init"  					                                # To initialize git
+                        - "git branch -M <your branch name>"          	         # Rename the branch you are pushing from to new branch name
+                        - "git remote  add origin <repository name> "          # This command saves the link to your online repo in a variable named 'origin' which could be any name entirely(My thoughts tho)
+                        - "git add <filename> or ."     		                    # To either add a specific file "<filename>" or all the files in the folder
+                        - "git commit -m" 				                        # Description of your commit. Your description should be enclosed in double quotation.	
+                        - "git push origin <your branch name>"     	          # Means push to Origin(remote repo) my branch <your branch name>
+                                        
