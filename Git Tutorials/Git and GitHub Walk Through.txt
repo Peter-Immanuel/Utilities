@@ -45,7 +45,7 @@ step 2b: Copy the link of your remote repo and go to an empty folder:
 
 Step 3: 
         Cloning a branch from your repo:
-                from 2b replace i with:  "git clone  -b <repo link> <name of branch>"                  #eg. git clone -b <repo link> peter"
+                from 2b replace i with:  "git clone  -b <name of branch> <repo link>"                  #eg. git clone -b peter <repo link>"
 
         Pushing from a new branch to Remote Repo without new branch:
                 it could be done in a number of ways, but here are 2.
