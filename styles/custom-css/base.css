@@ -1,0 +1,109 @@
+
+.color{
+   border: 1px solid orangered;
+}
+
+
+/********* login styles  ***********/
+body{
+   background-image:linear-gradient(to right, rgba(212, 131, 0, 0.089), rgba(212, 255, 0, 0.138));
+   width: 100%;
+   height: 100vh;
+   /* border: 1px solid green; */
+}
+
+
+.login-card-wrapper{
+   /* height: 40vh; */
+   width: 45%;
+   padding: 1rem;
+   background-color: white;
+   box-shadow: 2px 2px 2px 2px rgba(183, 183, 183, 0.187);
+}
+
+
+.logo{
+   height: 2.2rem;
+}
+
+.logo-title{
+   font-size: 1.2rem;
+   color: rgba(128, 128, 128, 0.889);
+}
+
+.card-title{
+   font-weight: 600;
+   font-size: 1.2rem;
+}
+
+.form-wrapper{
+   width: 100%;
+   animation: fadeIn ease 2s 1;
+   animation-fill-mode: forwards;
+}
+
+.username-input{
+   width: 100%;
+   transition: 3s;
+}
+
+.password-input{
+   display: none;
+   transition:linear ease-in 1s;
+   width: 100%;
+}
+
+.form-input{
+   border: none;
+   border-bottom: 1px solid rgb(247, 201, 0);
+   /* border: 1px solid orangered; */
+   width: 100%;
+   font-size: 0.9rem;
+   outline: none;
+   
+}
+
+.recover-account{
+   font-size: 0.7rem;
+   color: rgb(18, 57, 230);
+}
+
+.arrow{
+   height: 1.5rem;
+}
+
+.arrow:hover{
+   height: 2rem;
+   transition: 0.4s ease-in-out;
+}
+
+.btn{
+   height: 2.3rem;
+   width: 6rem;
+   color: white;
+}
+
+
+/******** Animations  *********/
+@keyframes fadeIn {
+   0%{
+      opacity: 0;
+   }
+   100%{
+      opacity: 1;
+   }
+}
+
+@keyframes slideLeft{
+   0%{
+      left: 0px;
+   }
+
+   100%{
+      left: -100px;
+   }
+}
+
+@keyframes  slideRight{
+
+}
